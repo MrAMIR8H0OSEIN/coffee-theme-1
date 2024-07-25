@@ -9,14 +9,14 @@ menubarbutton[0].classList.add('active');
 document.addEventListener('scroll',(event)=>{
     items.forEach((el,i)=>{
         if(i == 0){
-            if(window.pageYOffset >= 0 && window.pageYOffset < el.nextElementSibling.offsetTop){
+            if(window.pageYOffset >= 0 && window.pageYOffset < el.nextElementSibling.offsetTop-1){
                 menubarbutton[i].classList.add('active');
             }else{
                 menubarbutton[i].classList.remove('active');
             }
         }
         else if(i != items.length-1){
-            if(window.pageYOffset > el.offsetTop-1 && window.pageYOffset < el.nextElementSibling.offsetTop){
+            if(window.pageYOffset > el.offsetTop-1 && window.pageYOffset < el.nextElementSibling.offsetTop-1){
                 menubarbutton[i].classList.add('active');
             }else{
                 menubarbutton[i].classList.remove('active');
