@@ -33,6 +33,10 @@ document.addEventListener('scroll',(event)=>{
 button.addEventListener('click',()=>{
     mainpage.style.display = 'none';
     menupage.style.display = 'block';
+    menubarbutton.forEach((el)=>{
+        el.classList.remove('active');
+    })
+    menubarbutton[0].classList.add('active');
 })
 back.addEventListener('click',()=>{
     menupage.style.display = 'none';
