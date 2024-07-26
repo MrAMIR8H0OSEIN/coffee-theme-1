@@ -24,7 +24,7 @@
     </div> 
     <div id="content-2" style="display: none;" class="max-w-[600px] m-auto">
         <div id="menu" class="flex flex-row-reverse">
-            <div id="menu-bar" class="flex flex-col gap-5 mt-[10px] ml-[10px] mr-[5px] top-0 h-full fixed overflow-y-auto">
+            <div id="menu-bar" class="flex flex-col gap-5 mt-[10px] ml-[10px] mr-[5px] top-0 h-full fixed overflow-y-auto overflow-x-hidden">
                 <a href="#back" id="back-button" class="text-white text-center block hover:bg-[#A17B3E] p-2 rounded-[10px] relative">بازگشت</a>
                 <a class="block items w-[73px] h-[73px] hover:bg-[#A17B3E] p-2 rounded-[10px] relative">
                     <img class="w-[45px] h-[60px] m-auto" src="http://senso.qrmenusaz.com/Media/ico_463_1638358782.png">
@@ -90,6 +90,44 @@
                 </div>
             </div>
         </div>
+        <div id="orders-number" style="display: none;" class="w-full fixed bottom-0 right-0 text-center bg-black text-white p-5">مشاهده دفترچه یادداشت<div class="inline-block bg-[#A17B3E] px-2 rounded-full mr-2">5</div></div>
+    </div>
+    <div id="content-3" style="display: none;" class="max-w-[600px] m-auto bg-white h-full block">
+        <div id="header-c" class="flex justify-between px-4 pt-2">
+            <p><strong>دفترچه یادداشت</strong></p>
+            <p id="close-poup">×</p>
+        </div>
+        <div class="flex flex-col px-2 gap-2 mt-2">
+            <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
+                <div class="details flex gap-3">
+                    <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
+                    <div class="inline-block">
+                        <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
+                        <span class="price-for-1 text-zinc-400">539 تومان</span>
+                    </div>
+                </div>
+                <div class="count flex gap-1 justify-end">
+                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer">+</div>
+                    <div class="text leading-[26px]">1</div>
+                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer">-</div>
+                </div>
+            </div>
+            <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
+                <div class="details flex gap-3">
+                    <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
+                    <div class="inline-block">
+                        <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
+                        <span class="price-for-1 text-zinc-400">539 تومان</span>
+                    </div>
+                </div>
+                <div class="count flex gap-1 justify-end">
+                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer">+</div>
+                    <div class="text leading-[26px]">1</div>
+                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer">-</div>
+                </div>
+            </div>
+        </div>
+        <div class="final-price text-center bg-zinc-200 m-2 p-3 rounded-xl">مجموع : 379 تومان</div>
     </div>
 </body>
 </html>
