@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         h1,h2,h3,h4,h5,h6,p,a,span,div{font-family: Vazirmatn;}
     </style>
 </head>
-<body style="background-image: url(img/bm_463_1638308652.jpg);" class="bg-cover">
+<body class="bg-[url(img/bm_463_1638308652.jpg)] bg-cover h-full">
     <div id="content" class="max-w-[600px] m-auto">
         <img class="w-[400px] m-auto p-10" src="https://teamgraphic.ir/upload/920/files/aV8troYy/2ltJGTLX.png" alt="logo">
         <img id="menu-button" class="w-[120px] m-auto mt-10" src="img/ico_463_1638362258.png" alt="menu">
@@ -90,44 +90,17 @@
                 </div>
             </div>
         </div>
-        <div id="orders-number" style="display: none;" class="w-full fixed bottom-0 right-0 text-center bg-black text-white p-5">مشاهده دفترچه یادداشت<div class="inline-block bg-[#A17B3E] px-2 rounded-full mr-2">5</div></div>
+        <div id="orders-number" style="display: none;" class="hover:cursor-pointer w-full fixed bottom-0 right-0 text-center bg-black text-white p-5">مشاهده دفترچه یادداشت<div id="num" class="inline-block bg-[#A17B3E] px-2 rounded-full mr-2">5</div></div>
     </div>
     <div id="content-3" style="display: none;" class="max-w-[600px] m-auto bg-white h-full block">
         <div id="header-c" class="flex justify-between px-4 pt-2">
             <p><strong>دفترچه یادداشت</strong></p>
-            <p id="close-poup">×</p>
+            <p id="close-poup" class="hover:cursor-pointer">×</p>
         </div>
-        <div class="flex flex-col px-2 gap-2 mt-2">
-            <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
-                <div class="details flex gap-3">
-                    <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
-                    <div class="inline-block">
-                        <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
-                        <span class="price-for-1 text-zinc-400">539 تومان</span>
-                    </div>
-                </div>
-                <div class="count flex gap-1 justify-end">
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer">+</div>
-                    <div class="text leading-[26px]">1</div>
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer">-</div>
-                </div>
-            </div>
-            <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
-                <div class="details flex gap-3">
-                    <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
-                    <div class="inline-block">
-                        <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
-                        <span class="price-for-1 text-zinc-400">539 تومان</span>
-                    </div>
-                </div>
-                <div class="count flex gap-1 justify-end">
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer">+</div>
-                    <div class="text leading-[26px]">1</div>
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer">-</div>
-                </div>
-            </div>
+        <div id="cal-replace-js">
+            <div class="content flex flex-col px-2 gap-2 mt-2"></div>
+            <div class="final-price text-center bg-zinc-200 m-2 rounded-xl"></div>
         </div>
-        <div class="final-price text-center bg-zinc-200 m-2 p-3 rounded-xl">مجموع : 379 تومان</div>
     </div>
 </body>
 </html>

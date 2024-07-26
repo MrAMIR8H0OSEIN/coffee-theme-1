@@ -14,39 +14,41 @@
     <div id="content" class="max-w-[600px] m-auto bg-white h-full block">
         <div id="header-c" class="flex justify-between px-4 pt-2">
             <p><strong>دفترچه یادداشت</strong></p>
-            <p id="close-poup">×</p>
+            <p id="close-poup" class="hover:cursor-pointer">×</p>
         </div>
-        <div class="flex flex-col px-2 gap-2 mt-2">
-            <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
-                <div class="details flex gap-3">
-                    <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
-                    <div class="inline-block">
-                        <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
-                        <span class="price-for-1 text-zinc-400">539 تومان</span>
+        <div id="cal-replace-js">
+            <div class="flex flex-col px-2 gap-2 mt-2">
+                <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
+                    <div class="details flex gap-3">
+                        <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
+                        <div class="inline-block">
+                            <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
+                            <span class="price text-zinc-400">539 تومان</span>
+                        </div>
+                    </div>
+                    <div class="count flex gap-1 justify-end">
+                        <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer add">+</div>
+                        <div class="text leading-[26px]">1</div>
+                        <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer remove">-</div>
                     </div>
                 </div>
-                <div class="count flex gap-1 justify-end">
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer">+</div>
-                    <div class="text leading-[26px]">1</div>
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer">-</div>
-                </div>
-            </div>
-            <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
-                <div class="details flex gap-3">
-                    <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
-                    <div class="inline-block">
-                        <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
-                        <span class="price-for-1 text-zinc-400">539 تومان</span>
+                <div class="items border-[2px] border-dotted border-zinc-300 rounded-xl p-4">
+                    <div class="details flex gap-3">
+                        <img class="inline-block w-[140px] rounded-lg" src="http://senso.qrmenusaz.com/Media/img_463_1687714562.jpg">
+                        <div class="inline-block">
+                            <p class="title">سالاد سزار با فیله سوخاری (چهار رول)</p>
+                            <span class="price text-zinc-400">539 تومان</span>
+                        </div>
+                    </div>
+                    <div class="count flex gap-1 justify-end">
+                        <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer add">+</div>
+                        <div class="text leading-[26px]">1</div>
+                        <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer remove">-</div>
                     </div>
                 </div>
-                <div class="count flex gap-1 justify-end">
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[7px] hover:cursor-pointer">+</div>
-                    <div class="text leading-[26px]">1</div>
-                    <div class="leading-[0] border-[1px] border-black rounded-full py-[12px] px-[8px] hover:cursor-pointer">-</div>
-                </div>
             </div>
+            <div class="final-price text-center bg-zinc-200 m-2 p-3 rounded-xl">مجموع : <span class="final-price">379</span> تومان</div>
         </div>
-        <div class="final-price text-center bg-zinc-200 m-2 p-3 rounded-xl">مجموع : 379 تومان</div>
     </div>
 </body>
 </html>
