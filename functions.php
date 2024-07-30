@@ -1,5 +1,19 @@
 <?php
-
+function Products(){
+    register_post_type('products', array(
+        'labels' => array(
+            'name' => __('محصولات'),
+            'singular_name' => __('محصول'),
+            'add_new' => __( 'افزودن محصول'),
+		    'add_new_item' => __( 'افزودن محصول')
+        ),
+        'public' => true,
+        'has_archive' => false,
+        'supports' => array('title','editor','thumbnail')
+    ));
+	register_taxonomy_for_object_type('category','products');
+}
+add_action('init','Products');
 function add_theme_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
