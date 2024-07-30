@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کافه منو</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html{scroll-behavior: smooth;}
         #menu-bar .items.active{background-color: #A17B3E;}
