@@ -44,15 +44,7 @@ back.addEventListener('click',()=>{
     menupage.style.display = 'none';
     mainpage.style.display = 'block';
 })
-menubarbutton.forEach((el,i)=>{
-    el.setAttribute('href','#menu-'+i)
-})
-items.forEach((el,i)=>{
-    el.setAttribute('id','menu-'+i);
-})
-childitems.forEach((el,i)=>{
-    el.setAttribute('id','menu-c-'+i);
-})
+
 //calculator
 
 //divs

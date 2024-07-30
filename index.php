@@ -13,68 +13,46 @@
     <div id="menu" class="flex flex-row-reverse">
         <div id="menu-bar" class="flex flex-col gap-5 mt-[10px] ml-[10px] mr-[5px] top-0 h-full fixed overflow-y-auto overflow-x-hidden">
             <a href="#back" id="back-button" class="text-white text-center block hover:bg-[#A17B3E] p-2 rounded-[10px] relative">بازگشت</a>
-            <a class="block items w-[73px] h-[73px] hover:bg-[#A17B3E] p-2 rounded-[10px] relative">
-                <img class="w-[45px] h-[60px] m-auto" src="http://senso.qrmenusaz.com/Media/ico_463_1638358782.png">
-            </a>
-            <a class="block items w-[73px] h-[73px] hover:bg-[#A17B3E] p-2 rounded-[10px] relative">
-                <img class="w-[45px] h-[60px] m-auto" src="http://senso.qrmenusaz.com/Media/ico_463_1638358782.png">
-            </a>
-            <a class="block items w-[73px] h-[73px] hover:bg-[#A17B3E] p-2 rounded-[10px] relative">
-                <img class="w-[45px] h-[60px] m-auto" src="http://senso.qrmenusaz.com/Media/ico_463_1638358782.png">
-            </a>
+                <?php $args = array(
+                        'taxonomy' => 'category',
+                        'hide_empty' => false,
+                        'parent' => 0
+                    ); 
+                    $terms = get_terms($args);
+                    foreach($terms as $term){
+                    ?>
+                            
+                            <a href="#menu-<?php echo $term->term_id; ?>" class="block items w-[73px] h-[73px] hover:bg-[#A17B3E] p-2 rounded-[10px] relative">
+                                <img class="w-[45px] h-[60px] m-auto" src="<?php echo $term->description;  ?>">
+                            </a>
+                        
+                    <?php   }
+                    ?>
         </div>
         <div id="menu-content" class="w-full ml-[95px] mr-[10px] flex flex-col">
-            <div class="items">
-                <div class="header bg-[#A17B3E] rounded-lg p-2 mt-[10px]"><p class="text-white text-center">پیتزا</p></div>
-                <div class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
-                    <img class="w-full" src="http://senso.qrmenusaz.com/Media/img_463_1674647853.jpg" alt="">
-                    <h3 class="text-[#A17B3E] mt-3"><strong>اسپشیال</strong></h3>
-                    <p class="text-white mt-2">سس مارینارا-راسته گوساله-ژامبون گوشت و مرغ دودی-مرغ-فلفل دلمه-زیتون</p>
-                    <div class="price text-white text-left">تومان <span>369</span></div>
-                    <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
-                </div>
-                <div class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
-                    <img class="w-full" src="http://senso.qrmenusaz.com/Media/img_463_1674647853.jpg" alt="">
-                    <h3 class="text-[#A17B3E] mt-3"><strong>اسپشیال</strong></h3>
-                    <p class="text-white mt-2">سس مارینارا-راسته گوساله-ژامبون گوشت و مرغ دودی-مرغ-فلفل دلمه-زیتون</p>
-                    <div class="price text-white text-left">تومان <span>369</span></div>
-                    <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="header bg-[#A17B3E] rounded-lg p-2 mt-[10px]"><p class="text-white text-center">پیتزا</p></div>
-                <div class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
-                    <img class="w-full" src="http://senso.qrmenusaz.com/Media/img_463_1674647853.jpg" alt="">
-                    <h3 class="text-[#A17B3E] mt-3"><strong>اسپشیال</strong></h3>
-                    <p class="text-white mt-2">سس مارینارا-راسته گوساله-ژامبون گوشت و مرغ دودی-مرغ-فلفل دلمه-زیتون</p>
-                    <div class="price text-white text-left">تومان <span>369</span></div>
-                    <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
-                </div>
-                <div class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
-                    <img class="w-full" src="http://senso.qrmenusaz.com/Media/img_463_1674647853.jpg" alt="">
-                    <h3 class="text-[#A17B3E] mt-3"><strong>اسپشیال</strong></h3>
-                    <p class="text-white mt-2">سس مارینارا-راسته گوساله-ژامبون گوشت و مرغ دودی-مرغ-فلفل دلمه-زیتون</p>
-                    <div class="price text-white text-left">تومان <span>369</span></div>
-                    <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="header bg-[#A17B3E] rounded-lg p-2 mt-[10px]"><p class="text-white text-center">پیتزا</p></div>
-                <div class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
-                    <img class="w-full" src="http://senso.qrmenusaz.com/Media/img_463_1674647853.jpg" alt="">
-                    <h3 class="text-[#A17B3E] mt-3"><strong>اسپشیال</strong></h3>
-                    <p class="text-white mt-2">سس مارینارا-راسته گوساله-ژامبون گوشت و مرغ دودی-مرغ-فلفل دلمه-زیتون</p>
-                    <div class="price text-white text-left">تومان <span>369</span></div>
-                    <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
-                </div>
-                <div class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
-                    <img class="w-full" src="http://senso.qrmenusaz.com/Media/img_463_1674647853.jpg" alt="">
-                    <h3 class="text-[#A17B3E] mt-3"><strong>اسپشیال</strong></h3>
-                    <p class="text-white mt-2">سس مارینارا-راسته گوساله-ژامبون گوشت و مرغ دودی-مرغ-فلفل دلمه-زیتون</p>
-                    <div class="price text-white text-left">تومان <span>369</span></div>
-                    <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
-                </div>
-            </div>
+            <?php foreach($terms as $term){
+
+                        $args = array('post_type' => 'products',
+                            'cat' => $term->term_id,
+                        ); 
+                        $the_query = new WP_Query( $args );
+                    ?>    
+                            <div id="menu-<?php echo $term->term_id; ?>" class="items">
+                                <div class="header bg-[#A17B3E] rounded-lg p-2 mt-[10px]"><p class="text-white text-center"><?php echo $term->name; ?></p></div>
+                                <?php if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();?>
+                                    <div id="menu-c-<?php echo $post->ID; ?>" class="items rounded-[5px] border-b-[1px] border-[#A17B3E] p-3 bg-[#011810] mt-5">
+                                        <img class="w-full" src="<?php echo get_the_post_thumbnail_url(); ?>">
+                                        <h3 class="text-[#A17B3E] mt-3"><strong><?php the_title(); ?></strong></h3>
+                                        <p class="text-white mt-2"><?php echo get_the_content(); ?></p>
+                                        <div class="price text-white text-left">تومان <span><?php echo get_post_meta($post->ID, 'price', true) ?></span></div>
+                                        <div class="button hover:cursor-pointer text-white text-center bg-black rounded-lg mt-3 p-2">افزودن به یادداشت</div>
+                                    </div>
+                                <?php }} ?>
+                            </div>
+                    <?php }
+                    ?>   
         </div>
     </div>
     <div id="orders-number" style="display: none;" class="hover:cursor-pointer w-full fixed bottom-0 right-0 text-center bg-black text-white p-5">مشاهده دفترچه یادداشت<div id="num" class="inline-block bg-[#A17B3E] px-2 rounded-full mr-2">5</div></div>
